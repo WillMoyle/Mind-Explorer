@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mind_Explorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fa5-Kq-JLh">
+                                <rect key="frame" x="959" y="620" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="handleMessageSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="ano-2Y-ojL"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="LCn-9v-dE4">
+                                <rect key="frame" x="849" y="620" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="hrE-Rl-raE">
+                                <rect key="frame" x="959" y="698" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="handleAxisSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="SzW-5w-9eR"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axes:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="yTX-nB-Ku5">
+                                <rect key="frame" x="849" y="698" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="PNm-H4-2Um">
+                                <rect key="frame" x="959" y="659" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="handleQuerySwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="59x-zs-wxk"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Query:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="Myv-H0-evY">
+                                <rect key="frame" x="849" y="659" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="9Hk-DR-yKo">
+                                <rect key="frame" x="16" y="20" width="342" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.36470588240000001" blue="1" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.36470588240000001" blue="1" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="vHW-Sw-OuG">
+                                <rect key="frame" x="295" y="27" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <action selector="xTextChangeBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="a5c-PS-Aw7"/>
+                                    <action selector="xTextChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="dAo-9v-rfz"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="rGb-Md-NJz">
+                                <rect key="frame" x="25" y="144" width="73" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z axis:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="9jI-qs-qnB">
+                                <rect key="frame" x="25" y="105" width="73" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y axis:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="h9v-Gl-kQg">
+                                <rect key="frame" x="25" y="66" width="73" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X axis:" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="dUx-x4-xFj">
+                                <rect key="frame" x="25" y="27" width="73" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4" maxValue="4" id="gQV-ad-Uiw">
+                                <rect key="frame" x="98" y="27" width="187" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="xSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Drs-Vp-jef"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4" maxValue="4" id="V89-CQ-wHY">
+                                <rect key="frame" x="98" y="67" width="187" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="ySliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hBM-F0-Wz3"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4" maxValue="4" id="rmV-H1-1W9">
+                                <rect key="frame" x="98" y="106" width="187" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="zSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="tBj-5P-Zhs"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" id="SmP-GJ-DLI">
+                                <rect key="frame" x="98" y="145" width="187" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sizeSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vEQ-Sc-c81"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="e4H-zR-35I">
+                                <rect key="frame" x="295" y="145" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <action selector="sizeTextChangeBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Pxu-3T-WiV"/>
+                                    <action selector="sizeTextChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="96Q-H1-MRp"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="1dz-Gx-HGS">
+                                <rect key="frame" x="295" y="106" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <action selector="zTextChangeBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="cdg-Sj-jSO"/>
+                                    <action selector="zTextChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="N2x-Jo-yMF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="1Ik-ak-xbm">
+                                <rect key="frame" x="295" y="67" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <action selector="yTextChangeBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="xhl-1c-9mY"/>
+                                    <action selector="yTextChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Og1-Z3-kUw"/>
+                                </connections>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="fts-Ub-1pt">
+                                <rect key="frame" x="100" y="183" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="handleCubeSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="YUa-SY-kTK"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h6f-k4-kUz">
+                                <rect key="frame" x="25" y="183" width="61" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Cube">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cubeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riq-qv-18s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ffo-E1-wJW">
+                                <rect key="frame" x="163" y="183" width="77" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Sphere">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sphereButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jxj-4e-m4g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HJi-b4-abY">
+                                <rect key="frame" x="261" y="184" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Execute">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="queryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DJ6-AG-jvt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gVg-D2-8pc">
+                                <rect key="frame" x="912" y="729" width="96" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="optionsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnK-IJ-fBP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mind Explorer tutorial.001.jpg" id="EwE-a3-fzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DZJ-9a-hrQ">
+                                <rect key="frame" x="912" y="0.0" width="96" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4kT-NT-UNA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="B2J-tp-jVS" appends="YES" id="hq3-q6-QnS"/>
+                            <outletCollection property="gestureRecognizers" destination="XG3-Jh-aSX" appends="YES" id="Gcy-YQ-gRc"/>
+                            <outletCollection property="gestureRecognizers" destination="Pkh-Ca-JSy" appends="YES" id="iCv-4x-w2o"/>
+                            <outletCollection property="gestureRecognizers" destination="Ll2-Y7-BnU" appends="YES" id="gGs-yt-c2d"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="axisModeLabel" destination="yTX-nB-Ku5" id="njp-Yl-VYZ"/>
+                        <outlet property="axisModeSwitch" destination="hrE-Rl-raE" id="TUj-Zv-Nm1"/>
+                        <outlet property="cubeBackground" destination="9Hk-DR-yKo" id="29D-fk-Oul"/>
+                        <outlet property="cubeButton" destination="h6f-k4-kUz" id="BQh-Ev-XBZ"/>
+                        <outlet property="cubeSwitch" destination="fts-Ub-1pt" id="83o-Lz-q0K"/>
+                        <outlet property="infoButton" destination="DZJ-9a-hrQ" id="PFq-eH-wXv"/>
+                        <outlet property="messageModeLabel" destination="LCn-9v-dE4" id="l7v-IA-6tF"/>
+                        <outlet property="messageModeSwitch" destination="fa5-Kq-JLh" id="yVi-Tm-uNR"/>
+                        <outlet property="optionsButton" destination="gVg-D2-8pc" id="fZ0-2b-sob"/>
+                        <outlet property="queryButton" destination="HJi-b4-abY" id="Wa8-3O-PHk"/>
+                        <outlet property="queryModeLabel" destination="Myv-H0-evY" id="f9c-Cp-mkn"/>
+                        <outlet property="queryModeSwitch" destination="PNm-H4-2Um" id="Hy0-D5-i7V"/>
+                        <outlet property="sizeLabel" destination="rGb-Md-NJz" id="iln-Dg-9Ye"/>
+                        <outlet property="sizeSlider" destination="SmP-GJ-DLI" id="Lcq-Di-eUt"/>
+                        <outlet property="sizeText" destination="e4H-zR-35I" id="A9b-05-mGE"/>
+                        <outlet property="sphereButton" destination="ffo-E1-wJW" id="ieQ-3T-CSH"/>
+                        <outlet property="tutorialImage" destination="EwE-a3-fzQ" id="6bL-ah-Um2"/>
+                        <outlet property="xLabel" destination="dUx-x4-xFj" id="OC5-Px-35Q"/>
+                        <outlet property="xSlider" destination="gQV-ad-Uiw" id="knW-wb-fDt"/>
+                        <outlet property="xText" destination="vHW-Sw-OuG" id="xHv-eS-rlc"/>
+                        <outlet property="yLabel" destination="h9v-Gl-kQg" id="hN2-95-bEE"/>
+                        <outlet property="ySlider" destination="V89-CQ-wHY" id="lIa-Fp-vs0"/>
+                        <outlet property="yText" destination="1Ik-ak-xbm" id="bHf-J9-h4t"/>
+                        <outlet property="zLabel" destination="9jI-qs-qnB" id="z9d-Si-CEV"/>
+                        <outlet property="zSlider" destination="rmV-H1-1W9" id="wE6-r0-rMj"/>
+                        <outlet property="zText" destination="1dz-Gx-HGS" id="lNv-Mq-KIG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="B2J-tp-jVS">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="Bgo-HH-B6K"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="XG3-Jh-aSX">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="Xwg-uV-Tbk"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Pkh-Ca-JSy">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="I9p-gR-ka1"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="Ll2-Y7-BnU">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="hoQ-58-erY"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="220" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mind Explorer tutorial.001.jpg" width="1024" height="768"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

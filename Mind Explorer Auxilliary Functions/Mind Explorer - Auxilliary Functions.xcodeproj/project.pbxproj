@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEC75F581B8E1C23004272DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC75F571B8E1C23004272DF /* main.swift */; };
+		BEC75F5D1B8E1C2D004272DF /* Adjacent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC75F591B8E1C2D004272DF /* Adjacent.swift */; };
+		BEC75F5E1B8E1C2D004272DF /* Archiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC75F5A1B8E1C2D004272DF /* Archiver.swift */; };
+		BEC75F5F1B8E1C2D004272DF /* Rescale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC75F5B1B8E1C2D004272DF /* Rescale.swift */; };
+		BEC75F601B8E1C2D004272DF /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC75F5C1B8E1C2D004272DF /* Sorting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE7CEAE01B626A2000E8BCB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE7CEAE21B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mind Explorer - Auxilliary Functions"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC75F571B8E1C23004272DF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = "Mind Explorer - Auxilliary Functions/main.swift"; sourceTree = SOURCE_ROOT; };
+		BEC75F591B8E1C2D004272DF /* Adjacent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adjacent.swift; path = "Mind Explorer - Auxilliary Functions/Functions/Adjacent.swift"; sourceTree = SOURCE_ROOT; };
+		BEC75F5A1B8E1C2D004272DF /* Archiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Archiver.swift; path = "Mind Explorer - Auxilliary Functions/Functions/Archiver.swift"; sourceTree = SOURCE_ROOT; };
+		BEC75F5B1B8E1C2D004272DF /* Rescale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rescale.swift; path = "Mind Explorer - Auxilliary Functions/Functions/Rescale.swift"; sourceTree = SOURCE_ROOT; };
+		BEC75F5C1B8E1C2D004272DF /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sorting.swift; path = "Mind Explorer - Auxilliary Functions/Functions/Sorting.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE7CEADF1B626A2000E8BCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE7CEAD91B626A2000E8BCB9 = {
+			isa = PBXGroup;
+			children = (
+				BE7CEAE41B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */,
+				BE7CEAE31B626A2000E8BCB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE7CEAE31B626A2000E8BCB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE7CEAE21B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE7CEAE41B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */ = {
+			isa = PBXGroup;
+			children = (
+				BEC75F571B8E1C23004272DF /* main.swift */,
+				BE7CEAEE1B626A5300E8BCB9 /* Functions */,
+			);
+			name = "Mind Explorer - Auxilliary Functions";
+			path = "Neural Network Viewer - Auxilliary Functions";
+			sourceTree = "<group>";
+		};
+		BE7CEAEE1B626A5300E8BCB9 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				BEC75F591B8E1C2D004272DF /* Adjacent.swift */,
+				BEC75F5A1B8E1C2D004272DF /* Archiver.swift */,
+				BEC75F5B1B8E1C2D004272DF /* Rescale.swift */,
+				BEC75F5C1B8E1C2D004272DF /* Sorting.swift */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE7CEAE11B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE7CEAE91B626A2000E8BCB9 /* Build configuration list for PBXNativeTarget "Mind Explorer - Auxilliary Functions" */;
+			buildPhases = (
+				BE7CEADE1B626A2000E8BCB9 /* Sources */,
+				BE7CEADF1B626A2000E8BCB9 /* Frameworks */,
+				BE7CEAE01B626A2000E8BCB9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mind Explorer - Auxilliary Functions";
+			productName = "Neural Network Viewer - Auxilliary Functions";
+			productReference = BE7CEAE21B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE7CEADA1B626A2000E8BCB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Will Moyle";
+				TargetAttributes = {
+					BE7CEAE11B626A2000E8BCB9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = BE7CEADD1B626A2000E8BCB9 /* Build configuration list for PBXProject "Mind Explorer - Auxilliary Functions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE7CEAD91B626A2000E8BCB9;
+			productRefGroup = BE7CEAE31B626A2000E8BCB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE7CEAE11B626A2000E8BCB9 /* Mind Explorer - Auxilliary Functions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE7CEADE1B626A2000E8BCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC75F5D1B8E1C2D004272DF /* Adjacent.swift in Sources */,
+				BEC75F581B8E1C23004272DF /* main.swift in Sources */,
+				BEC75F601B8E1C2D004272DF /* Sorting.swift in Sources */,
+				BEC75F5E1B8E1C2D004272DF /* Archiver.swift in Sources */,
+				BEC75F5F1B8E1C2D004272DF /* Rescale.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE7CEAE71B626A2000E8BCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE7CEAE81B626A2000E8BCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE7CEAEA1B626A2000E8BCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Mind Explorer - Auxilliary Functions";
+			};
+			name = Debug;
+		};
+		BE7CEAEB1B626A2000E8BCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Mind Explorer - Auxilliary Functions";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE7CEADD1B626A2000E8BCB9 /* Build configuration list for PBXProject "Mind Explorer - Auxilliary Functions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7CEAE71B626A2000E8BCB9 /* Debug */,
+				BE7CEAE81B626A2000E8BCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE7CEAE91B626A2000E8BCB9 /* Build configuration list for PBXNativeTarget "Mind Explorer - Auxilliary Functions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7CEAEA1B626A2000E8BCB9 /* Debug */,
+				BE7CEAEB1B626A2000E8BCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE7CEADA1B626A2000E8BCB9 /* Project object */;
+}
